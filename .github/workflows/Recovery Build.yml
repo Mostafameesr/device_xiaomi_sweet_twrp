@@ -34,7 +34,7 @@ on:
       MODEL_NAME:
         description: 'MODEL_NAME'
         required: true
-        default: 'xiaomi'
+        default: 'RedmiTurbo3_PocoF6_peridot_A14'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
