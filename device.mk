@@ -37,3 +37,23 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
+# QSE
+PRODUCT_PACKAGES += \
+    libQSEEComAPI \
+    libqdutils \
+    libqservice
+
+# Weaver
+PRODUCT_PACKAGES += \
+    android.hardware.weaver-service.nxp-qti
+
+PRODUCT_PACKAGES += \
+    android.hardware.weaver-V2-ndk
+
+PRODUCT_PACKAGES += \
+    ese_weaver
