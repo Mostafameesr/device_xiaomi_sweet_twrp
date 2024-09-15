@@ -26,6 +26,18 @@ PRODUCT_PACKAGES += \
     bootctrl.xiaomi_sm8635.recovery \
     android.hardware.boot@1.2-impl-qti.recovery
 
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
+    
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl-qti \
+    android.hardware.gatekeeper@1.0-service-qti
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1-service-qti
+
 # SHIPPING API
 PRODUCT_SHIPPING_API_LEVEL := 32
 
