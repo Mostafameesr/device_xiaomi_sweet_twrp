@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_peridot.mk
-
+PRODUCT_MAKEFILES := \
+   $(LOCAL_DIR)/twrp_peridot.mk \
+   $(LOCAL_DIR)/twrp_chenfeng.mk
 COMMON_LUNCH_CHOICES := twrp_peridot-eng
