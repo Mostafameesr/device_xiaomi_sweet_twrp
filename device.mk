@@ -48,14 +48,29 @@ PRODUCT_TARGET_VNDK_VERSION := 34
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-
-TWRP_REQUIRED_MODULES += \
-    miui_prebuilt
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH) \
+    hardware/qcom-caf/bootctrl
 
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
+
+TARGET_RECOVERY_DEVICE_MODULES += \
+    android.hardware.keymaster@4.1
+    
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint \
+    android.hardware.security.secureclock \
+    android.hardware.security.sharedsecret
+    
+# Keystore2
+PRODUCT_PACKAGES += \
+    android.system.keystore2
+
+TWRP_REQUIRED_MODULES += \
+    miui_prebuilt
 
 # QSE
 PRODUCT_PACKAGES += \
