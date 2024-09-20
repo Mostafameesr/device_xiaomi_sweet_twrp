@@ -63,28 +63,9 @@ TARGET_RECOVERY_DEVICE_MODULES += \
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint \
     android.hardware.security.secureclock \
-    android.hardware.security.sharedsecret
+    android.hardware.security.sharedsecret \
+    android.system.keystore2-V1-ndk
     
 # Keystore2
 PRODUCT_PACKAGES += \
     android.system.keystore2
-
-TWRP_REQUIRED_MODULES += \
-    miui_prebuilt
-
-# QSE
-PRODUCT_PACKAGES += \
-    libQSEEComAPI \
-    libqdutils \
-    libqservice
-
-# Weaver
-PRODUCT_PACKAGES += \
-    android.hardware.weaver-service.nxp-qti
-
-PRODUCT_PACKAGES += \
-    android.hardware.weaver-V2-ndk
-
-PRODUCT_PACKAGES += \
-    ese_weaver
-
