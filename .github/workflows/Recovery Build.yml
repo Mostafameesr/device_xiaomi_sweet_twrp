@@ -43,7 +43,11 @@ on:
         description: 'BUILD_TARGET'
         required: true
         default: 'recovery'
-
+        type: choice
+        options:
+        - boot
+        - recovery
+        - vendor_boot
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
